@@ -40,8 +40,6 @@ sshpass -p ubuntu1234 ssh-copy-id ubuntu@172.16.0.1$a # in a loop
 | 6x Pis          | `14.6` | `36.2`    |
 | Swicth + 6x Pis | `16.3` | `37.9` \* |
 
- < don't forget to - 0.3
-
 ### Notes:
 
 1. All power is in Watts.
