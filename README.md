@@ -1,6 +1,6 @@
 # General and Cryptography Benchmarks on Raspberry Pi Clusters
 
-The cluster consists of 20 Raspberry Pi 3 B+ single board computers (SBCs) with an extra two Raspberry Pi 3 B+ SBCs for the gateway and power monitoring.
+The cluster consists of 20 Raspberry Pi 3 B+ single board computers (SBCs) with an extra Raspberry Pi 3 B+ serving as the gateway.
 
 **This repo is being moved over from the private GitLab.**
 
@@ -14,8 +14,7 @@ When looking at the front (blue side).
 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20* |
 |    |    |    |    |    |    |    |    |    |     |
 
-- node numbers correspond to the last octet in **`172.31.42.X`**
-- \* master
+- node numbers correspond to the last octet in **`172.31.42.X`** (3.142)
 - gateway is currently at **`10.13.19.1`**
 
 ## Host Names
