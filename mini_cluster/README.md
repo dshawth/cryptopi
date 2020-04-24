@@ -34,11 +34,11 @@ sshpass -p ubuntu1234 ssh-copy-id ubuntu@172.16.0.1$a # in a loop
 |-----------------|--------|-----------|
 | Switch          | `1.4`  | `1.5` \+  |
 | 2x Pis          | `4.9`  | `12.1`    |
-| Swicth + 2x Pis | `6.5`  | `13.7`    |
+| Switch + 2x Pis | `6.5`  | `13.7`    |
 | 4x Pis          | `9.7`  | `24.1`    |
-| Swicth + 4x Pis | `11.4` | `25.9` \* |
+| Switch + 4x Pis | `11.4` | `25.9` \* |
 | 6x Pis          | `14.6` | `36.2`    |
-| Swicth + 6x Pis | `16.3` | `37.9` \* |
+| Switch + 6x Pis | `16.3` | `37.9` \* |
 
 ### Notes:
 
