@@ -2,8 +2,6 @@
 
 The cluster consists of 20 Raspberry Pi 3 B+ single board computers (SBCs) with an extra Raspberry Pi 3 B+ serving as the gateway.
 
-**This repo is being moved over from the private GitLab.**
-
 ## Physical Nodes
 
 When looking at the front (blue side).
@@ -21,4 +19,3 @@ When looking at the front (blue side).
 
 - `master`
 - `worker1`, `worker2`, ...
-
