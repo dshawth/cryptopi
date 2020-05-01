@@ -46,4 +46,4 @@ sshpass -p ubuntu1234 ssh-copy-id ubuntu@172.16.0.1$a # in a loop
 2. Idle readings fluctuated between 3 values (EG 6.6, 6.7, 6.8); center value always used; expected resulting precision `+/- 0.1`. The with and without switch were all in the expected range of `+/- 0.1` based on the switch alone.
 3. Bench reading fluctuated much more, making the middle reading infeasible to capture, the peak readings are recorded instead. Although the readings varied more, they are repeatable.
 4. \+ Incongruence noted, the benchmark that resulted in this value had only 2x Pis.
-4. \* Switch appears to draw slightly more than power here.
+5. \* Switch appears to draw slightly more than power here.
