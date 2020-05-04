@@ -52,40 +52,17 @@ Estimated individual values below:
 
 ## Experiment
 
-- Note: Follow up on 05/03/2020 supersedes these results as these are throttled due to the fans being off. The throttling reduced both performance and power draw.
-- Date: 05/01/2020
-- Desc: Cluster crypto benchmark power
-- Note: Surge protector draw and switch draw are included in the below results:
-
-| Run | Peak |
-|-----|------|
-| 1   | 144  |
-| 2   | 140  |
-| 3   | 135  |
-| 4   | 136  |
-| 5   | 139  |
-| 6   | 137  |
-| 7   | 136  |
-| 8   | 138  |
-| 9   | 138  |
-| 10  | 137  |
-
-- Mean:  138
-- StDev: 2.58
-
-## Notes:
-
-1. All power is in Watts.
-2. Bench reading fluctuated much more, making the middle reading infeasible to capture, the peak readings are recorded instead. Although the readings varied more, they are repeatable as seen above.
-3. Based on the mini-cluster using traditional Raspberry Pi power supplies, the expected utilization is `121` Watts peak during the crypto benchmarks. As Note 4 in the previous experiment details, our efficiency is `14%` less efficient, however, as the ATX PSU documentation indicates, it expectedly gained efficiency as it approached the middle of it's rated power delivery range.
-
-## Experiment
-
 - Date: 05/03/2020
 - Desc: HPL and Crypto with fans, switch, etc.
-- Note: Results not throttled this time.  Repeatable with fans running at least 5 minutes after a benchmark conducted without fans.
+- Note: Results not throttled as 05/01/2020 (removed) experiment was.  Repeatable with fans running at least 5 minutes after a benchmark conducted without fans.
 
 | Test   | Peak |
 |--------|------|
 | Crypto | 160  |
 | HPL    | 188  |
+
+## Notes:
+
+1. All power is in Watts.
+2. Bench reading fluctuated much more, making the middle reading infeasible to capture, the peak readings are recorded instead. Although the readings varied more, they are repeatable as seen above.
+3. Based on the mini-cluster using traditional Raspberry Pi power supplies, the expected utilization is `121` Watts peak during the crypto benchmarks. As Note 4 in the previous experiment details, our efficiency is approximately `%25` less efficient.
