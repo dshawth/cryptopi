@@ -16,19 +16,32 @@
 
 ## Experiment
 
-- Date: 04/27/2020
+- Date: 04/27/2020, 05/3/2020 (continuation)
 - Desc: Cluster idle breakdown
 - Note: Kill-a-watt moved around as required
 - Note: Surge protector draw NOT included in the below table
 - Note: Pi Gate still hangs the rack console resulting in incomplete experiment
+- Note: Continuation included accounting for the fans and the PSU + BitScope Blade
 
 ## Results
 
-| Hardware | Idle |
-|----------|------|
-| Switch   | 7.0  |
-| Cluster  | 61.5 |
-| Both     | 71.5 |
+Cluster = PSU + BitScope Blade + 20x Pis (off/on)
+
+| Hardware                          | Idle |
+|-----------------------------------|------|
+| Switch                            | 7.0  |
+| Cluster (Pis off)                 | 25.1 |
+| Cluster (Pis off) + Fans          | 30.1 |
+| Cluster (Pis off) + Switch + Fans | 37.2 |
+| Cluster (Pis on)                  | 61.5 |
+| Cluster + Switch (Pis on)         | 71.5 |
+
+Estimated individual values below:
+
+- Fans: 5.0
+- Switch: 7.0
+- Cluster - Pis: 25.1 (PSU + BitScope Blade)
+- 20x Pis: 40
 
 ## Notes:
 
@@ -39,6 +52,7 @@
 
 ## Experiment
 
+- Note: Follow up on 05/03/2020 supersedes these results as these are throttled due to the fans being off. The throttling reduced both performance and power draw.
 - Date: 05/01/2020
 - Desc: Cluster crypto benchmark power
 - Note: Surge protector draw and switch draw are included in the below results:
@@ -64,3 +78,14 @@
 1. All power is in Watts.
 2. Bench reading fluctuated much more, making the middle reading infeasible to capture, the peak readings are recorded instead. Although the readings varied more, they are repeatable as seen above.
 3. Based on the mini-cluster using traditional Raspberry Pi power supplies, the expected utilization is `121` Watts peak during the crypto benchmarks. As Note 4 in the previous experiment details, our efficiency is `14%` less efficient, however, as the ATX PSU documentation indicates, it expectedly gained efficiency as it approached the middle of it's rated power delivery range.
+
+## Experiment
+
+- Date: 05/03/2020
+- Desc: HPL and Crypto with fans, switch, etc.
+- Note: Results not throttled this time.  Repeatable with fans running at least 5 minutes after a benchmark conducted without fans.
+
+| Test   | Peak |
+|--------|------|
+| Crypto | 160  |
+| HPL    | 188  |
