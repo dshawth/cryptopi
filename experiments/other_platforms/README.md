@@ -1,14 +1,107 @@
 # Other Platforms
 
-We also investigated the performance of the other ARM-based SBC platforms listed below:
+We also investigated the cryptographic performance of the other ARM-based SBC platforms.
 
 - ODROID-XU4
 - BeagleBone Black
 - Libre Computer Board
-- Tinker Board ??
 
 The operating system (OS) options were limited in comparison to the Pi.
 We chose the most supported OS for each at the time and ran the `cryptsetup benchmark`.
 We found that none had hardware AES instructions and most did not include the Serpent or Twofish kernel modules.
 
-**TODO rerun these**
+## TinkerBoard
+
+- Dist: TinkerOS
+- Vers: v2.0.11
+- Date: 2019/8/21
+- Type: GUI
+
+```bash4
+sudo apt update && sudo apt dist-upgrade -y
+sudo apt install cryptsetup -y
+/sbin/cryptsetup benchmark
+```
+
+- Modules: AES
+- Enc: 54.1 MiB/s
+- Dec: 56.4 MiB/s
+
+## Raspberry Pi 4B
+
+- Dist: Raspbian Buster Lite
+- Vers: February 2020
+- Date: 2020/02/13
+- Type: Term
+- User: `pi`
+- Pass: `raspberry`
+
+```bash
+sudo apt update && sudo apt dist-upgrade -y
+sudo apt install cryptsetup -y
+cryptsetup benchmark
+```
+
+- Modules: AES
+- Enc: 44.3 MiB/s
+- Dec: 77.3 MiB/s
+
+## BeagleBone Black (REV C)
+
+- Dist: Debian
+- Vers: 6.3.0
+- Date: 10/05/2018
+- Note: OS preinstalled
+- User: `debian`
+- Pass: `temppwd`
+
+```bash
+sudo apt update && sudo apt dist-upgrade -y # dist-upgrade hangs
+cryptsetup benchmark
+```
+
+- Modules: AES, Serpent, Twofish
+- Enc: 21.3 MiB/s, 16.3 MiB/s, 21.5 MiB/s
+- Dec: 24.3 MiB/s, 18.9 MiB/s, 24.3 MiB/s
+
+## Libre Computer Board (AML-S905X-CC)
+
+- Dist: Ubuntu
+- Vers: Libre 18.04
+- Date: 2019-04-24
+- Type: Term
+- Note: Non-Canonical source
+- User: `libre`
+- Pass: `computer`
+
+```bash
+sudo apt update && sudo apt dist-upgrade -y
+sudo apt install cryptsetup -y
+cryptsetup benchmark
+```
+
+- Modules: None
+- Note: Oddly missing as part of all other 18.04 distributions; noted DES present.
+
+## ODROID C2
+
+- Dist: Ubuntu
+- Vers: 18.04 Minimal
+- Date: 2019-08-19
+- Type: Term
+- Note: Non-Canonical source
+- User: `root`
+- Pass: `odroid`
+
+```bash
+apt update && apt dist-upgrade -y
+apt install cryptsetup -y
+cryptsetup benchmark
+```
+
+- Modules: AES, Serpent, Twofish
+- Enc: 46.9 MiB/s, 31.1 MiB/s, 46.4 MiB/s
+- Dec: 50.0 MiB/s, 33.9 MiB/s, 51.0 MiB/s
+
+## ODROID XU4
+

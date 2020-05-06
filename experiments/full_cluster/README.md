@@ -65,4 +65,4 @@ Estimated individual values below:
 
 1. All power is in Watts.
 2. Bench reading fluctuated much more, making the middle reading infeasible to capture, the peak readings are recorded instead. Although the readings varied more, they are repeatable as seen above.
-3. Based on the mini-cluster using traditional Raspberry Pi power supplies, the expected utilization is `121` Watts peak during the crypto benchmarks. As Note 4 in the previous experiment details, our efficiency is approximately `%25` less efficient.
+3. Based on the mini-cluster using traditional Raspberry Pi power supplies, the expected utilization is `121` Watts peak during the crypto benchmarks. As Note 4 in the previous experiment details, our efficiency remains approximately `%25` less efficient.
