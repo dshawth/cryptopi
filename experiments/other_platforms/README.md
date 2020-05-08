@@ -2,13 +2,10 @@
 
 We also investigated the cryptographic performance of the other ARM-based SBC platforms.
 
-- ODROID-XU4
-- BeagleBone Black
-- Libre Computer Board
+- The operating system (OS) options were limited in comparison to the Pi 3 B+.
+- We chose the **officially supported** OS for each platform.
 
-The operating system (OS) options were limited in comparison to the Pi.
-We chose the most supported OS for each at the time and ran the `cryptsetup benchmark`.
-We found that none had hardware AES instructions and most did not include the Serpent or Twofish kernel modules.
+TODO add single Pi 3B+ info here
 
 ## TinkerBoard
 
