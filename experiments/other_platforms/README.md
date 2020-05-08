@@ -1,15 +1,17 @@
 # Other Platforms
 
-We also investigated the cryptographic performance of the other ARM-based SBC platforms.
+We also investigated the cryptographic performance of the other ARM-based SBC platforms after selecting the Raspberry 3 B+ for its popularity, wide community support, and inexpensiveness.
 
 - The operating system (OS) options were limited in comparison to the Pi 3 B+.
-- We chose the **officially supported** OS for each platform.
+- We chose the **officially supported** OS for each of our non-selected platforms.
 
-For reference, our selected SBC platform, the Raspberry Pi 3B+, has the below performance on Ubuntu Core 18.04:
+For reference, our selected SBC platform, the Raspberry Pi 3B+, has the below performance on Ubuntu Core 18.04 \*:
 
 - Modules: AES, Serpent, Twofish
 - Enc: 51.0 MiB/s, 28.0 MiB/s, 41.5 MiB/s
 - Dec: 59.8 MiB/s, 30.0 MiB/s, 44.4 MiB/s
+
+\* We chose Ubuntu Core 18.04 for our selected platform due to the availability of the cryptographic modules and compatibility with the Raspberry Pi 3B+.
 
 ## TinkerBoard
 
