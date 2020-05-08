@@ -102,3 +102,11 @@ cryptsetup benchmark
 
 ## ODROID XU4
 
+- Dist: Ubuntu
+- Vers: 18.04 Minimal
+- Date: 2019-08-19
+- Type: Term
+- Note: Non-Canonical source
+- User: `root`
+- Pass: `odroid`
+
