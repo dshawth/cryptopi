@@ -123,7 +123,7 @@ cryptsetup benchmark
 apt update && apt dist-upgrade -y
 apt install cryptsetup -y
 reboot
-cryptsetup benchmark | tee xu4_crypto_20200511
+cryptsetup benchmark | tee xu4_crypto_20200511.txt
 ```
 
 | Algorithm   | Key  | Encryption | Decryption |
@@ -134,3 +134,5 @@ cryptsetup benchmark | tee xu4_crypto_20200511
 | aes-cbc     | 256b | 59.8 MiB/s | 56.6 MiB/s |
 | serpent-cbc | 256b | 41.8 MiB/s | 43.6 MiB/s |
 | twofish-cbc | 256b | 59.4 MiB/s | 62.3 MiB/s |
+
+[raw](xu4_crypto_20200511.txt)
