@@ -5,11 +5,14 @@ We also investigated the cryptographic performance of the other ARM-based SBC pl
 - The operating system (OS) options were limited in comparison to the Pi 3 B+.
 - We chose the **officially supported** OS for each of our non-selected platforms.
 
-For reference, our selected SBC platform, the Raspberry Pi 3B+, has the below performance on Ubuntu Core 18.04 \*:
+For reference, our selected SBC platform, the Raspberry Pi 3B+, has the below performance on Ubuntu Core 18.04 with cryptsetup version 2.0.2 \*:
 
-- Modules: AES, Serpent, Twofish
-- Enc: 51.0 MiB/s, 28.0 MiB/s, 41.5 MiB/s
-- Dec: 59.8 MiB/s, 30.0 MiB/s, 44.4 MiB/s
+|         | AES  | Serpent | Twofish |
+|---------|------|---------|---------|
+| Encrypt | 51.0 | 28.0    | 41.5    |
+| Decrypt | 59.8 | 30.0    | 44.4    |
+
+*All results in MiB/s*
 
 \* We chose Ubuntu Core 18.04 for our selected platform due to the availability of the cryptographic modules and compatibility with the Raspberry Pi 3B+.
 
