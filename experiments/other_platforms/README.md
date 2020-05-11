@@ -116,3 +116,13 @@ cryptsetup benchmark
 - User: `root`
 - Pass: `odroid`
 
+```bash
+apt update && apt dist-upgrade -y
+apt install cryptsetup -y
+reboot
+cryptsetup benchmark | tee xu4_crypto_20200511
+```
+
+- Modules: AES, Serpent, Twofish
+- Enc:  MiB/s,  MiB/s,  MiB/s
+- Dec:  MiB/s,  MiB/s,  MiB/s
