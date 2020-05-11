@@ -1,4 +1,4 @@
-# Other Platforms
+# Other SBCs
 
 We also investigated the cryptographic performance of the other ARM-based SBC platforms after selecting the Raspberry 3 B+ for its popularity, wide community support, and inexpensiveness.
 
@@ -126,6 +126,11 @@ reboot
 cryptsetup benchmark | tee xu4_crypto_20200511
 ```
 
-- Modules: AES, Serpent, Twofish
-- Enc:  MiB/s,  MiB/s,  MiB/s
-- Dec:  MiB/s,  MiB/s,  MiB/s
+| Algorithm   | Key  | Encryption | Decryption |
+|-------------|------|------------|------------|
+| aes-cbc     | 128b | 74.6 MiB/s | 70.4 MiB/s |
+| serpent-cbc | 128b | 41.8 MiB/s | 43.6 MiB/s |
+| twofish-cbc | 128b | 59.4 MiB/s | 62.2 MiB/s |
+| aes-cbc     | 256b | 59.8 MiB/s | 56.6 MiB/s |
+| serpent-cbc | 256b | 41.8 MiB/s | 43.6 MiB/s |
+| twofish-cbc | 256b | 59.4 MiB/s | 62.3 MiB/s |
