@@ -16,8 +16,6 @@ BitScopeBlade
 
 @RWB02 I think you have the best handle on this part.
 
-
-
 ## Custom Power Supply
 
 To facilitate the rack mounted BitScope blade, we built a custom power supply and attached it to a 2U rack shelf that we extended to 3U to fit the power supply.
@@ -30,7 +28,7 @@ We purchased the below parts to build our rack mounted power supply:
 |--------------------------------------|---------|----------|---------|------------------------------------------|
 | Corsair HX750i 750W ATX PLATINUM PSU | $153.98 | 1        | $153.98 | https://www.newegg.com/p/N82E16817139084 |
 | CRJ 24-Pin ATX Red LED Power Switch  | $8.99   | 1        | $8.99   | https://smile.amazon.com/dp/B01MSY4966   |
-| Corsair ML120 120mm Fan 2-Pack       | $33.59  | 1        | $33.59  | https://newegg.com/p/1YF-001H-00185      |
+| Corsair ML120 120mm Fan 2-Pack       | $33.59  | 1        | $33.59  | https://www.newegg.com/p/1YF-001H-00185  |
 | Fan controller                       | $21.39  | 1        | $21.39  | https://www.newegg.com/p/376-0067-00001  |
 
 Total: $217.95
@@ -69,4 +67,6 @@ Total: $70.75
 
 We also used some semi-transparent polycarbonate that we had on hand to fabricate a replacement front facia for the cluster with the fans and their grills attached in intake mode.
 
-@dshawth add a photo here.
+<img src="custom_facia_and_switch.jpg" alt="" width="504" height="378"/>
+
+[High res](custom_facia_and_switch.jpg)
