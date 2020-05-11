@@ -98,7 +98,7 @@ cryptsetup benchmark
 apt update && apt dist-upgrade -y
 apt install cryptsetup -y
 reboot
-cryptsetup benchmark
+cryptsetup benchmark | tee c2_crypto_20200511.txt
 ```
 
 | Algorithm   | Key  | Encryption | Decryption |
