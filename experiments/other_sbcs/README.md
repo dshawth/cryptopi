@@ -91,27 +91,32 @@ cryptsetup benchmark
 
 ## ODROID C2
 
-- Dist: Ubuntu
-- Vers: 18.04 Minimal
-- Date: 2019-08-19
-- Type: Term
-- Note: Non-Canonical source
-- User: `root`
-- Pass: `odroid`
+- Dist: [Ubuntu 18.04 Minimal ODROID C2 (20190819)](https://odroid.in/ubuntu_18.04lts/C2/)
+- Creds: `root` | `odroid`
 
 ```bash
 apt update && apt dist-upgrade -y
 apt install cryptsetup -y
+reboot
 cryptsetup benchmark
 ```
 
-- Modules: AES, Serpent, Twofish
-- Enc: 46.9 MiB/s, 31.1 MiB/s, 46.4 MiB/s
-- Dec: 50.0 MiB/s, 33.9 MiB/s, 51.0 MiB/s
+| Algorithm   | Key  | Encryption | Decryption |
+|-------------|------|------------|------------|
+| aes-cbc     | 128b | 45.6       | 48.4       |
+| serpent-cbc | 128b | 30.1       | 32.9       |
+| twofish-cbc | 128b | 46.8       | 51.3       |
+| aes-cbc     | 256b | 38.1       | 39.3       |
+| serpent-cbc | 256b | 31.9       | 34.1       |
+| twofish-cbc | 256b | 47.7       | 51.3       |
+
+*Results in MiB/s*
+
+[raw](c2_crypto_20200511.txt)
 
 ## ODROID XU4
 
-- Dist: [Ubuntu 18.04 Minimal DROID XU4 (20190911)](https://odroid.in/ubuntu_18.04lts/XU3_XU4_MC1_HC1_HC2/)
+- Dist: [Ubuntu 18.04 Minimal ODROID XU4 (20190911)](https://odroid.in/ubuntu_18.04lts/XU3_XU4_MC1_HC1_HC2/)
 - Creds: `root` | `odroid`
 
 ```bash
@@ -130,6 +135,6 @@ cryptsetup benchmark | tee xu4_crypto_20200511.txt
 | serpent-cbc | 256b | 41.8       | 43.6       |
 | twofish-cbc | 256b | 59.4       | 62.3       |
 
-*All results in MiB/s*
+*Results in MiB/s*
 
 [raw](xu4_crypto_20200511.txt)
