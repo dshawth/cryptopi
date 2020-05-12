@@ -24,6 +24,7 @@ For reference, our selected SBC platform, the Raspberry Pi 3B+, has the below pe
 ```bash
 sudo apt update && sudo apt dist-upgrade -y
 sudo apt install cryptsetup -y
+sudo reboot
 /sbin/cryptsetup benchmark
 ```
 
@@ -32,9 +33,8 @@ sudo apt install cryptsetup -y
 | aes-cbc   | 128b | 54.7       | 57.0 MiB/s |
 | aes-cbc   | 256b | 41.6       | 43.7       |
 
-*Results in MiB/s*
-
-[raw](tinker_crypto_20200512.txt)
+- *Results in MiB/s*
+- [raw](tinker_crypto_20200512.txt)
 
 ## Raspberry Pi 4B
 
@@ -42,18 +42,22 @@ sudo apt install cryptsetup -y
 - Vers: February 2020
 - Date: 2020/02/13
 - Type: Term
-- User: `pi`
-- Pass: `raspberry`
+- Creds: `pi` | `raspberry`
 
 ```bash
 sudo apt update && sudo apt dist-upgrade -y
 sudo apt install cryptsetup -y
-cryptsetup benchmark
+sudo reboot
+cryptsetup benchmark | tee pi4_crypto_20200512.txt
 ```
 
-- Modules: AES
-- Enc: 44.3 MiB/s
-- Dec: 77.3 MiB/s
+| Algorithm | Key  | Encryption | Decryption |
+|-----------|------|------------|------------|
+| aes-cbc   | 128b | 44.6       | 77.2       |
+| aes-cbc   | 256b | 36.8       | 58.4       |
+
+- *Results in MiB/s*
+- [raw](pi4_crypto_20200512.txt)
 
 ## BeagleBone Black (REV C)
 
@@ -75,22 +79,22 @@ cryptsetup benchmark
 
 ## Libre Computer Board (AML-S905X-CC)
 
-- Dist: Ubuntu
-- Vers: Libre 18.04
-- Date: 2019-04-24
-- Type: Term
-- Note: Non-Canonical source
-- User: `libre`
-- Pass: `computer`
+- Dist: [Libre Ubuntu Bionic Headless (20190624)](http://share.loverpi.com/board/libre-computer-project/libre-computer-board-aml-s905x-cc/image/ubuntu/)
+- Creds: `libre` | `computer`
 
 ```bash
 sudo apt update && sudo apt dist-upgrade -y
 sudo apt install cryptsetup -y
-cryptsetup benchmark
+sudo reboot
+cryptsetup benchmark | tee libre_crypto_20200512.txt
 ```
 
-- Modules: None
-- Note: Oddly missing as part of all other 18.04 distributions; noted DES present.
+| Algorithm | Key  | Encryption | Decryption |
+|-----------|------|------------|------------|
+
+- No modules, no results, oddly absent as normally part of 18.04; noted DES present.
+- *Results in MiB/s*
+- [raw](libre_crypto_20200512.txt)
 
 ## ODROID C2
 
@@ -113,9 +117,8 @@ cryptsetup benchmark | tee c2_crypto_20200511.txt
 | serpent-cbc | 256b | 31.9       | 34.1       |
 | twofish-cbc | 256b | 47.7       | 51.3       |
 
-*Results in MiB/s*
-
-[raw](c2_crypto_20200511.txt)
+- *Results in MiB/s*
+- [raw](c2_crypto_20200511.txt)
 
 ## ODROID XU4
 
@@ -138,6 +141,5 @@ cryptsetup benchmark | tee xu4_crypto_20200511.txt
 | serpent-cbc | 256b | 41.8       | 43.6       |
 | twofish-cbc | 256b | 59.4       | 62.3       |
 
-*Results in MiB/s*
-
-[raw](xu4_crypto_20200511.txt)
+- *Results in MiB/s*
+- [raw](xu4_crypto_20200511.txt)

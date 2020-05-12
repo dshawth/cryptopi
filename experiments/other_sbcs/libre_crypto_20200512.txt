@@ -1,0 +1,8 @@
+# Tests are approximate using memory only (no storage IO).
+PBKDF2-sha1       265327 iterations per second for 256-bit key
+PBKDF2-sha256     480998 iterations per second for 256-bit key
+PBKDF2-sha512     191067 iterations per second for 256-bit key
+PBKDF2-ripemd160  151178 iterations per second for 256-bit key
+PBKDF2-whirlpool   67285 iterations per second for 256-bit key
+argon2i       4 iterations, 347095 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
+argon2id      4 iterations, 350450 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
