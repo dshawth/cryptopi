@@ -16,22 +16,25 @@ For reference, our selected SBC platform, the Raspberry Pi 3B+, has the below pe
 
 \* We chose Ubuntu Core 18.04 for our selected platform due to the availability of the cryptographic modules and compatibility with the Raspberry Pi 3B+.
 
-## TinkerBoard
+## TinkerBoard (Rev 1.2)
 
-- Dist: TinkerOS
-- Vers: v2.0.11
-- Date: 2019/8/21
-- Type: GUI
+- Dist: [TinkerOS Debian v2.0.11 (20190821)](https://tinkerboarding.co.uk/wiki/index.php/TinkerOS)
+- Creds: `linaro` | `linaro`
 
-```bash4
+```bash
 sudo apt update && sudo apt dist-upgrade -y
 sudo apt install cryptsetup -y
 /sbin/cryptsetup benchmark
 ```
 
-- Modules: AES
-- Enc: 54.1 MiB/s
-- Dec: 56.4 MiB/s
+| Algorithm | Key  | Encryption | Decryption |
+|-----------|------|------------|------------|
+| aes-cbc   | 128b | 54.7       | 57.0 MiB/s |
+| aes-cbc   | 256b | 41.6       | 43.7       |
+
+*Results in MiB/s*
+
+[raw](tinker_crypto_20200512.txt)
 
 ## Raspberry Pi 4B
 
