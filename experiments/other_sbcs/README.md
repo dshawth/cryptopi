@@ -7,10 +7,14 @@ We also investigated the cryptographic performance of the other ARM-based SBC pl
 
 For reference, our selected SBC platform, the Raspberry Pi 3B+, has the below performance on Ubuntu Core 18.04 with cryptsetup version 2.0.2 \*:
 
-|         | AES  | Serpent | Twofish |
-|---------|------|---------|---------|
-| Encrypt | 51.0 | 28.0    | 41.5    |
-| Decrypt | 59.8 | 30.0    | 44.4    |
+| Algorithm   | Key  | Encryption | Decryption |
+|-------------|------|------------|------------|
+| aes-cbc     | 128b | 47.3       | 57.6       |
+| serpent-cbc | 128b | 26.4       | 29.5       |
+| twofish-cbc | 128b | 38.5       | 43.2       |
+| aes-cbc     | 256b | 37.2       | 43.9       |
+| serpent-cbc | 256b | 27.5       | 29.6       |
+| twofish-cbc | 256b | 40.5       | 43.3       |
 
 *All results in MiB/s*
 
