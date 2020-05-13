@@ -16,7 +16,8 @@ For reference, our selected SBC platform, the Raspberry Pi 3B+, has the below pe
 | serpent-cbc | 256b | 27.5       | 29.6       |
 | twofish-cbc | 256b | 40.5       | 43.3       |
 
-*All results in MiB/s*
+- *Results in MiB/s*
+- [raw](pi3_crypto_20200513.txt)
 
 \* We chose Ubuntu Core 18.04 for our selected platform due to the availability of the cryptographic modules and compatibility with the Raspberry Pi 3B+.
 
