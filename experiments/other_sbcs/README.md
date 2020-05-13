@@ -21,66 +21,30 @@ For reference, our selected SBC platform, the Raspberry Pi 3B+, has the below pe
 
 \* We chose Ubuntu Core 18.04 for our selected platform due to the availability of the cryptographic modules and compatibility with the Raspberry Pi 3B+.
 
-## TinkerBoard (Rev 1.2)
-
-- Dist: [TinkerOS Debian v2.0.11 (20190821)](https://tinkerboarding.co.uk/wiki/index.php/TinkerOS)
-- Creds: `linaro` | `linaro`
-
-```bash
-sudo apt update && sudo apt dist-upgrade -y
-sudo apt install cryptsetup -y
-sudo reboot
-/sbin/cryptsetup benchmark
-```
-
-| Algorithm | Key  | Encryption | Decryption |
-|-----------|------|------------|------------|
-| aes-cbc   | 128b | 54.7       | 57.0       |
-| aes-cbc   | 256b | 41.6       | 43.7       |
-
-- *Results in MiB/s*
-- [raw](tinker_crypto_20200512.txt)
-
-## Raspberry Pi 4B
-
-- Dist: Raspbian Buster Lite
-- Vers: February 2020
-- Date: 2020/02/13
-- Type: Term
-- Creds: `pi` | `raspberry`
-
-```bash
-sudo apt update && sudo apt dist-upgrade -y
-sudo apt install cryptsetup -y
-sudo reboot
-cryptsetup benchmark | tee pi4_crypto_20200512.txt
-```
-
-| Algorithm | Key  | Encryption | Decryption |
-|-----------|------|------------|------------|
-| aes-cbc   | 128b | 44.6       | 77.2       |
-| aes-cbc   | 256b | 36.8       | 58.4       |
-
-- *Results in MiB/s*
-- [raw](pi4_crypto_20200512.txt)
-
 ## BeagleBone Black (REV C)
 
-- Dist: Debian
-- Vers: 6.3.0
-- Date: 10/05/2018
-- Note: OS preinstalled
-- User: `debian`
-- Pass: `temppwd`
+- Dist: [Debian Buster IoT 10.3 (20200406)](https://beagleboard.org/latest-images)
+- Creds: `debian` | `temppwd`
+- Note: booting to SD card requires boot button.
 
 ```bash
-sudo apt update && sudo apt dist-upgrade -y # dist-upgrade hangs
-cryptsetup benchmark
+sudo apt update && sudo apt dist-upgrade -y
+sudo apt install cryptsetup -y
+sudo reboot
+cryptsetup benchmark | tee beagle_crypto_20200513.txt
 ```
 
-- Modules: AES, Serpent, Twofish
-- Enc: 21.3 MiB/s, 16.3 MiB/s, 21.5 MiB/s
-- Dec: 24.3 MiB/s, 18.9 MiB/s, 24.3 MiB/s
+| Algorithm   | Key  | Encryption | Decryption |
+|-------------|------|------------|------------|
+| aes-cbc     | 128b | 24.5       | 28.0       |
+| serpent-cbc | 128b | 16.0       | 18.8       |
+| twofish-cbc | 128b | 20.8       | 24.1       |
+| aes-cbc     | 256b | 27.0       | 26.9       |
+| serpent-cbc | 256b | 17.3       | 18.7       |
+| twofish-cbc | 256b | 22.8       | 24.2       |
+
+- *Results in MiB/s*
+- [raw](beagle_crypto_20200513.txt)
 
 ## Libre Computer Board (AML-S905X-CC)
 
@@ -148,3 +112,46 @@ cryptsetup benchmark | tee xu4_crypto_20200511.txt
 
 - *Results in MiB/s*
 - [raw](xu4_crypto_20200511.txt)
+
+## Raspberry Pi 4B
+
+- Dist: Raspbian Buster Lite
+- Vers: February 2020
+- Date: 2020/02/13
+- Type: Term
+- Creds: `pi` | `raspberry`
+
+```bash
+sudo apt update && sudo apt dist-upgrade -y
+sudo apt install cryptsetup -y
+sudo reboot
+cryptsetup benchmark | tee pi4_crypto_20200512.txt
+```
+
+| Algorithm | Key  | Encryption | Decryption |
+|-----------|------|------------|------------|
+| aes-cbc   | 128b | 44.6       | 77.2       |
+| aes-cbc   | 256b | 36.8       | 58.4       |
+
+- *Results in MiB/s*
+- [raw](pi4_crypto_20200512.txt)
+
+## TinkerBoard (Rev 1.2)
+
+- Dist: [TinkerOS Debian v2.0.11 (20190821)](https://tinkerboarding.co.uk/wiki/index.php/TinkerOS)
+- Creds: `linaro` | `linaro`
+
+```bash
+sudo apt update && sudo apt dist-upgrade -y
+sudo apt install cryptsetup -y
+sudo reboot
+/sbin/cryptsetup benchmark
+```
+
+| Algorithm | Key  | Encryption | Decryption |
+|-----------|------|------------|------------|
+| aes-cbc   | 128b | 54.7       | 57.0       |
+| aes-cbc   | 256b | 41.6       | 43.7       |
+
+- *Results in MiB/s*
+- [raw](tinker_crypto_20200512.txt)
