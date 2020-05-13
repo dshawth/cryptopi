@@ -30,7 +30,7 @@ sudo reboot
 
 | Algorithm | Key  | Encryption | Decryption |
 |-----------|------|------------|------------|
-| aes-cbc   | 128b | 54.7       | 57.0 MiB/s |
+| aes-cbc   | 128b | 54.7       | 57.0       |
 | aes-cbc   | 256b | 41.6       | 43.7       |
 
 - *Results in MiB/s*
