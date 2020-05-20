@@ -1,9 +1,3 @@
-"""
-=============================
-New plots (transforming Ray's plots to Python)
-=============================
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -14,26 +8,62 @@ fig,ax = plt.subplots()
 #y_labels = ['0', '1', '10', '100','1000','10000']
 
 #################### ENCRYPT DATA ##############################
+######new run#######
 
 ###SERPENT
-nuc_secrypt = 86.13
-hpc_secrypt = 111.36
-pi_secrypt = [56.17, 111.62, 168.48, 224.59, 280.62, 336.64, 392.84, 449.11, 505.1, 561.6]
+nuc_secrypt = 83.4 
+hpc_secrypt = 0.0
+pi_secrypt = [52.99, 109.49, 165.66, 221.78, 277.72, 333.67, 389.39, 445.48, 501.85, 555.92]
 
 ###TWOFISH data
-nuc_tecrypt = 194.8
-hpc_tecrypt = 246.34
-pi_tecrypt = [82.99, 165.03, 248.97, 331.89, 414.76, 497.75, 580.66, 663.68, 746.69, 830]
+nuc_tecrypt = 175.7
+hpc_tecrypt = 0.0
+pi_tecrypt = [78.67, 162.89, 246.2, 328.64, 411.93, 494.73, 577.22, 660.32, 743.47, 824.23]
 
 ###AES DATA
-nuc_aecrypt = 793.78
-hpc_aecrypt = 1003.83
-pi_aecrypt = [75.94, 150.97, 227.83, 303.74, 379.59, 455.47, 531.44, 607.47, 683.48, 759.5]
+nuc_aecrypt = 750.9
+hpc_aecrypt = 0.0
+pi_aecrypt = [71.51, 148.29, 224.71, 300.1, 376.4, 452.16, 527.57, 603.79, 679.94, 753.58]
 
+#####old run##########
+###SERPENT
+#nuc_secrypt = 86.13
+#hpc_secrypt = 111.36
+#pi_secrypt = [56.17, 111.62, 168.48, 224.59, 280.62, 336.64, 392.84, 449.11, 505.1, 561.6]
+
+###TWOFISH data
+#nuc_tecrypt = 194.8
+#hpc_tecrypt = 246.34
+#pi_tecrypt = [82.99, 165.03, 248.97, 331.89, 414.76, 497.75, 580.66, 663.68, 746.69, 830]
+
+###AES DATA
+#nuc_aecrypt = 793.78
+#hpc_aecrypt = 1003.83
+#pi_aecrypt = [75.94, 150.97, 227.83, 303.74, 379.59, 455.47, 531.44, 607.47, 683.48, 759.5]
 
 
 ######################## DECRYPT DATA #########################
+###New run###
 
+###SERPENT DATA
+nuc_sdcrypt = 581.1
+hpc_sdcrypt = 0.0
+pi_sdcrypt = [56.94, 117.47, 177.78, 237.44, 297.69, 357.55, 417.43, 477.64, 538.07, 596.07]
+
+
+###TWOFISH data
+nuc_tdcrypt = 340.4
+hpc_tdcrypt = 0.0
+pi_tdcrypt = [84.24, 174.39, 263.29, 351.52, 440.33, 528.99, 616.92, 706.24, 795.29, 881.62]
+
+
+###AES DATA
+nuc_adcrypt = 2335.6 
+hpc_adcrypt = 0.0
+pi_adcrypt = [85.07, 176.64, 267.42, 357.07, 447.79, 538.5, 628.38, 719.12, 810.24, 897.66]
+
+
+###old run###
 ###SERPENT DATA
 nuc_sdcrypt = 643.16
 hpc_sdcrypt = 841.36
@@ -51,6 +81,7 @@ pi_tdcrypt = [88.77, 176.60, 266.27, 354.98, 443.61, 532.34, 620.92, 709.83, 798
 nuc_adcrypt = 2520.06
 hpc_adcrypt = 3171.71
 pi_adcrypt = [90.44, 180.02, 271.26, 361.63, 451.98, 542.52, 632.83, 723.33, 813.69, 904.31]
+
 
 
 #creates seperate plots for encrypt and decrypt --uncomment the one you need
