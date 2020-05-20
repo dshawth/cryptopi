@@ -6,15 +6,19 @@ This page describes the design, setup, and modifications to our cluster.
 
 ## Single Board Computers
 
-Raspberry Pi 3 B+
-
-@anyone want this part?
+We chose the Raspberry Pi 3 B+ for our single board computer (SBC) for it's popularity, affordability, and community support.
 
 ## Rack Chassis
 
-BitScopeBlade
+We used the [BitScopeBlade (BR20A)](http://my.bitscope.com/store/?p=view&i=product+BR20A) to rack mount our cluster of 20 Raspberry Pi 3 B+ SBCs.
 
-@RWB02 I think you have the best handle on this part.
+<img src="pi_cluster_angle.jpg" alt="" width="504" height="378"/>
+
+[High res](pi_cluster_angle.jpg)
+
+<img src="pi_cluster_front.jpg" alt="" width="504" height="378"/>
+
+[High res](pi_cluster_front.jpg)
 
 ## Custom Power Supply
 
