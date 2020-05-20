@@ -1,0 +1,4 @@
+        aes-cbc   128b    44.1 MiB/s    51.9 MiB/s
+        aes-cbc   256b    32.8 MiB/s    39.3 MiB/s
+        aes-cbc   128b    51.1 MiB/s    60.0 MiB/s
+        aes-cbc   256b    38.0 MiB/s    45.2 MiB/s

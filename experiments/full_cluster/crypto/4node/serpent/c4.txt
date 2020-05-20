@@ -1,0 +1,8 @@
+    serpent-cbc   128b    24.2 MiB/s    25.9 MiB/s
+    serpent-cbc   256b    25.0 MiB/s    27.9 MiB/s
+    serpent-cbc   128b    28.0 MiB/s    30.0 MiB/s
+    serpent-cbc   256b    28.0 MiB/s    30.0 MiB/s
+    serpent-cbc   128b    28.0 MiB/s    30.0 MiB/s
+    serpent-cbc   256b    28.0 MiB/s    30.0 MiB/s
+    serpent-cbc   128b    28.0 MiB/s    30.0 MiB/s
+    serpent-cbc   256b    28.0 MiB/s    30.0 MiB/s

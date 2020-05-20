@@ -1,0 +1,59 @@
+User:		ubuntu
+Addresses:	172.31.42.1-2
+Command:	cryptsetup benchmark
+Output:		stdout
+# Nmap 7.70 scan initiated Wed May 20 11:44:38 2020 as: nmap -p22 -Pn -oG /tmp/tmp.1yd0nNGKLe -q 172.31.42.1-2
+Host: 172.31.42.1 (ubuntu)	Status: Up
+Host: 172.31.42.1 (ubuntu)	Ports: 22/open/tcp//ssh///
+Host: 172.31.42.2 ()	Status: Up
+Host: 172.31.42.2 ()	Ports: 22/open/tcp//ssh///
+# Nmap done at Wed May 20 11:44:38 2020 -- 2 IP addresses (2 hosts up) scanned in 0.24 seconds
+Number:		2
+Started:	1/2Started:	2/2
+Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		0/2 /Done:		0/2 -Done:		0/2 \Done:		0/2 |Done:		1/2 /Done:		1/2 -Done:		1/2 \Done:		1/2 |Done:		1/2 /Done:		1/2 -Done:		1/2 \Done:		1/2 |Done:		1/2 /Done:		1/2 -Done:		1/2 \Done:		1/2 |Done:		2/2 /Done:		2/2  
+Output:
+
+# Tests are approximate using memory only (no storage IO).
+PBKDF2-sha1       201959 iterations per second for 256-bit key
+PBKDF2-sha256     295873 iterations per second for 256-bit key
+PBKDF2-sha512     196509 iterations per second for 256-bit key
+PBKDF2-ripemd160  158108 iterations per second for 256-bit key
+PBKDF2-whirlpool   69793 iterations per second for 256-bit key
+argon2i       4 iterations, 210406 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
+argon2id      4 iterations, 208214 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
+#     Algorithm | Key |  Encryption |  Decryption
+        aes-cbc   128b    44.2 MiB/s    51.9 MiB/s
+    serpent-cbc   128b    24.2 MiB/s    25.9 MiB/s
+    twofish-cbc   128b    35.9 MiB/s    38.4 MiB/s
+        aes-cbc   256b    32.8 MiB/s    39.1 MiB/s
+    serpent-cbc   256b    24.2 MiB/s    26.0 MiB/s
+    twofish-cbc   256b    35.9 MiB/s    38.4 MiB/s
+        aes-xts   256b    56.9 MiB/s    51.1 MiB/s
+    serpent-xts   256b    26.0 MiB/s    27.0 MiB/s
+    twofish-xts   256b    40.8 MiB/s    41.5 MiB/s
+        aes-xts   512b    44.6 MiB/s    39.5 MiB/s
+    serpent-xts   512b    26.0 MiB/s    27.0 MiB/s
+    twofish-xts   512b    41.9 MiB/s    42.7 MiB/s
+# Tests are approximate using memory only (no storage IO).
+PBKDF2-sha1       211066 iterations per second for 256-bit key
+PBKDF2-sha256     318522 iterations per second for 256-bit key
+PBKDF2-sha512     218818 iterations per second for 256-bit key
+PBKDF2-ripemd160  173835 iterations per second for 256-bit key
+PBKDF2-whirlpool   77191 iterations per second for 256-bit key
+argon2i       4 iterations, 215776 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
+argon2id      4 iterations, 213703 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
+#     Algorithm | Key |  Encryption |  Decryption
+        aes-cbc   128b    51.0 MiB/s    59.9 MiB/s
+    serpent-cbc   128b    28.0 MiB/s    30.0 MiB/s
+    twofish-cbc   128b    41.5 MiB/s    44.3 MiB/s
+        aes-cbc   256b    38.0 MiB/s    45.2 MiB/s
+    serpent-cbc   256b    28.0 MiB/s    30.0 MiB/s
+    twofish-cbc   256b    41.5 MiB/s    44.3 MiB/s
+        aes-xts   256b    65.6 MiB/s    59.1 MiB/s
+    serpent-xts   256b    30.1 MiB/s    31.2 MiB/s
+    twofish-xts   256b    46.3 MiB/s    47.2 MiB/s
+        aes-xts   512b    50.2 MiB/s    44.8 MiB/s
+    serpent-xts   512b    30.1 MiB/s    31.2 MiB/s
+    twofish-xts   512b    46.4 MiB/s    47.2 MiB/s
+
+Done!
