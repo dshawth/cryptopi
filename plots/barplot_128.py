@@ -17,17 +17,17 @@ fig,ax = plt.subplots()
 
 ###SERPENT
 nuc_secrypt = 79.2 
-hpc_secrypt = 0.0
+hpc_secrypt = 100.8
 pi_secrypt = [52.54, 108.9, 165.15, 220.79, 276.91, 332.91, 388.33, 444.91, 501.85, 554.09]
 
 ###TWOFISH data
 nuc_tecrypt = 182.3
-hpc_tecrypt = 0.0
+hpc_tecrypt = 194.8
 pi_tecrypt = [78.03, 161.88, 245.24, 327.55, 410.9, 493.95, 576.59, 659.61, 743.01, 823.11]
 
 ###AES DATA
 nuc_aecrypt = 977.0
-hpc_aecrypt = 0.0
+hpc_aecrypt = 1167.2
 pi_aecrypt = [95.26, 197.74, 299.99, 401.5, 503.73, 602.6, 703.38, 806.23, 909.04, 1007.0]
 
 
@@ -36,17 +36,17 @@ pi_aecrypt = [95.26, 197.74, 299.99, 401.5, 503.73, 602.6, 703.38, 806.23, 909.0
 
 ###SERPENT
 #nuc_secrypt =  610.5 
-#hpc_secrypt = 0.0
+#hpc_secrypt = 360.6
 #pi_secrypt = [56.36, 116.87, 177.2, 236.77, 297.08, 357.06, 416.78, 477.14, 537.23,594.79]
 
 ###TWOFISH data
 #nuc_tecrypt = 341.1
-#hpc_tecrypt = 0.0
+#hpc_tecrypt = 386.6 
 #pi_tecrypt = [83.62, 173.32, 262.44, 350.58, 439.68, 528.52, 616.56, 705.74, 794.89, 880.6]
 
 ###AES DATA
 #nuc_aecrypt =  2889.1
-#hpc_aecrypt = 0.0
+#hpc_aecrypt = 3663.1
 #pi_aecrypt = [112.01, 232.32, 352.67, 471.62, 591.98, 710.41,  827.78, 949.13, 1069.88, 1183.05]
 
 
