@@ -35,19 +35,19 @@ pi_aecrypt = [95.26, 197.74, 299.99, 401.5, 503.73, 602.6, 703.38, 806.23, 909.0
 ######################## DECRYPT DATA #########################
 
 ###SERPENT
-nuc_secrypt =  610.5 
-hpc_secrypt = 0.0
-pi_secrypt = [56.36, 116.87, 177.2, 236.77, 297.08, 357.06, 416.78, 477.14, 537.23,594.79]
+#nuc_secrypt =  610.5 
+#hpc_secrypt = 0.0
+#pi_secrypt = [56.36, 116.87, 177.2, 236.77, 297.08, 357.06, 416.78, 477.14, 537.23,594.79]
 
 ###TWOFISH data
-nuc_tecrypt = 341.1
-hpc_tecrypt = 0.0
-pi_tecrypt = [83.62, 173.32, 262.44, 350.58, 439.68, 528.52, 616.56, 705.74, 794.89, 880.6]
+#nuc_tecrypt = 341.1
+#hpc_tecrypt = 0.0
+#pi_tecrypt = [83.62, 173.32, 262.44, 350.58, 439.68, 528.52, 616.56, 705.74, 794.89, 880.6]
 
 ###AES DATA
-nuc_aecrypt =  2889.1
-hpc_aecrypt = 0.0
-pi_aecrypt = [112.01, 232.32, 352.67, 471.62, 591.98, 710.41,  827.78, 949.13, 1069.88, 1183.05]
+#nuc_aecrypt =  2889.1
+#hpc_aecrypt = 0.0
+#pi_aecrypt = [112.01, 232.32, 352.67, 471.62, 591.98, 710.41,  827.78, 949.13, 1069.88, 1183.05]
 
 
 #creates seperate plots for encrypt and decrypt --uncomment the one you need
@@ -83,7 +83,7 @@ ax.legend([handles[idx] for idx in order],[labels[idx] for idx in order],
 bbox_to_anchor=(0., 1.02, 1., 0.2), loc='lower left', ncol=3,  mode="expand", borderaxespad=0.)
 plt.subplots_adjust(top=0.8)
 
-ax.set_ylim([0,3000])
+ax.set_ylim([0,2000])
 
 
 
