@@ -1,6 +1,6 @@
 # Other Platforms
 
-HEDT, NUC
+MRD, NUC
 
 
 ## Desktop
