@@ -14,7 +14,7 @@ fig,ax = plt.subplots()
 
 ### Power measurements (peak only, in Watts)
 nuc_power = 42
-hedt_power = 129
+MRD_power = 73.5
 pi_power = [40, 51, 62, 72, 85, 96, 110, 125, 139,149]
 
 #updated pi_power to include switch
@@ -36,7 +36,7 @@ cselect='lightslategray'
 
 ax.bar(x, pi_power, bar_width, color=cselect, label="BitScope Blade Cluster")
 ax.bar(x+bar_width, mini_cluster, bar_width, color='limegreen', label="Green cluster")
-plt.axhline(y=hedt_power, color=cselect, linestyle='-', label="HEDT", linewidth=2)
+plt.axhline(y=MRD_power, color=cselect, linestyle='-', label="MRD", linewidth=2)
 plt.axhline(y=nuc_power, color=cselect, linestyle='--', label="NUC", linewidth=2)
 
 ax.set_xticks(x)
