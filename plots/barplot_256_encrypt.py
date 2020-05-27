@@ -10,21 +10,21 @@ fig,ax = plt.subplots()
 #################### ENCRYPT DATA ##############################
 
 ###SERPENT
-nuc_secrypt = 83.4 
-hpc_secrypt = 102.5
-pi_secrypt = [52.99, 109.49, 165.66, 221.78, 277.72, 333.67, 389.39, 445.48, 501.85, 555.92]
+nuc_serpent_encrypt = 83.4 
+mrd_serpent_encrypt = 102.5
+pi_serpent_encrypt = [52.99, 109.49, 165.66, 221.78, 277.72, 333.67, 389.39, 445.48, 501.85, 555.92]
 
 
 ###TWOFISH data
-nuc_tecrypt = 175.7
-hpc_tecrypt = 193.1
-pi_tecrypt = [78.67, 162.89, 245.24, 328.64, 411.93, 494.73, 577.22, 660.32, 743.47, 824.23]
+nuc_twofish_encrypt = 175.7
+mrd_twofish_encrypt = 193.1
+pi_twofish_encrypt = [78.67, 162.89, 245.24, 328.64, 411.93, 494.73, 577.22, 660.32, 743.47, 824.23]
 
 
 ###AES DATA
-nuc_aecrypt = 750.9
-hpc_aecrypt = 854.7
-pi_aecrypt = [71.51, 148.29, 224.71, 300.1, 376.4, 452.16, 527.57, 603.79, 679.94, 753.58]
+nuc_aes_encrypt = 750.9
+mrd_aes_encrypt = 854.7
+pi_aes_encrypt = [71.51, 148.29, 224.71, 300.1, 376.4, 452.16, 527.57, 603.79, 679.94, 753.58]
 
 
 
@@ -33,19 +33,17 @@ ax.set_xlabel('Number of Pis')
 
 bar_width=0.2
 
-ax.bar(x, pi_aecrypt, bar_width, color='c', label="Pi Serpent")
+ax.bar(x, pi_serpent_encrypt, bar_width, color='c', label="Pi Serpent")
+plt.axhline(y=mrd_serpent_encrypt, color='c', linestyle='-', label="MRD Serpent", linewidth=2)
+plt.axhline(y=nuc_serpent_encrypt, color='c', linestyle='--', label="NUC Serpent", linewidth=2)
 
+ax.bar(x+bar_width, pi_aes_encrypt, bar_width, color='k', label="Pi AES")
+plt.axhline(y=mrd_aes_encrypt, color='k', linestyle='-', label="MRD AES", linewidth=2)
+plt.axhline(y=nuc_aes_encrypt, color='k', linestyle='--', label="NUC AES", linewidth=2)
 
-plt.axhline(y=hpc_secrypt, color='c', linestyle='-', label="MRD Serpent", linewidth=2)
-plt.axhline(y=nuc_secrypt, color='c', linestyle='--', label="NUC Serpent", linewidth=2)
-
-ax.bar(x+bar_width, pi_aecrypt, bar_width, color='k', label="Pi AES")
-plt.axhline(y=hpc_aecrypt, color='k', linestyle='-', label="MRD AES", linewidth=2)
-plt.axhline(y=nuc_aecrypt, color='k', linestyle='--', label="NUC AES", linewidth=2)
-
-ax.bar(x+bar_width+bar_width, pi_tecrypt, bar_width, color='g', label="Pi Twofish")
-plt.axhline(y=hpc_tecrypt, color='g', linestyle='-', label="MRD Twofish", linewidth=2)
-plt.axhline(y=nuc_tecrypt, color='g', linestyle='--', label="NUC Twofish", linewidth=2)
+ax.bar(x+bar_width+bar_width, pi_twofish_encrypt, bar_width, color='g', label="Pi Twofish")
+plt.axhline(y=mrd_twofish_encrypt, color='g', linestyle='-', label="MRD Twofish", linewidth=2)
+plt.axhline(y=nuc_twofish_encrypt, color='g', linestyle='--', label="NUC Twofish", linewidth=2)
 
 
 ax.set_xticks(x)
