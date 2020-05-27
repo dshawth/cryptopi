@@ -1,15 +1,12 @@
 aes enc 128b 703.38
-serpent enc 128b 388.33
-twofish enc 128b 576.59
-
 aes dec 128b 827.78
-serpent dec 128b 416.78
-twofish dec 128b 616.56
-
 aes enc 256b 527.57
-serpent enc 256b 389.39
-twofish enc 256b 577.22
-
 aes dec 256b 628.38
+serpent enc 128b 388.33
+serpent dec 128b 416.78
+serpent enc 256b 389.39
 serpent dec 256b 417.43
+twofish enc 128b 576.59
+twofish dec 128b 616.56
+twofish enc 256b 577.22
 twofish dec 256b 616.92
